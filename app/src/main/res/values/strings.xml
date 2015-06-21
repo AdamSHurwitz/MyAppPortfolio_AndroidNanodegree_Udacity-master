@@ -3,5 +3,11 @@
 
     <string name="title">Adam\'s Killer Apps</string>
     <string name="action_settings">Options</string>
-    <id id="id">spotify button</id>
+
+    <string name="spotify_text">SPOTIFY STREAMER</string>
+    <string name="scores_text">SCORES APP</string>
+    <string name="library_text">LIBRARY APP</string>
+    <string name="build_text">BUILD IT BIGGER</string>
+    <string name="reader_text">READER APP</string>
+    <string name="capstone_text">CAPSTONE: MY APP</string>
 </resources>

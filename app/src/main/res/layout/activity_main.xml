@@ -6,7 +6,8 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
     android:background="#A1887F">
 
-    <TextView android:text="@string/title" android:layout_width="wrap_content"
+    <TextView android:text="@string/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
@@ -15,7 +16,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SPOTIFY STREAMER"
+        android:text="@string/spotify_text"
         android:drawableLeft="@drawable/spotify_icon"
         android:id="@+id/button"
         android:layout_below="@+id/textView"
@@ -25,7 +26,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SCORES APP"
+        android:text="@string/scores_text"
         android:drawableLeft="@drawable/scores_icon"
         android:id="@+id/button2"
         android:layout_below="@+id/button"
@@ -35,7 +36,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LIBRARY APP"
+        android:text="@string/library_text"
         android:drawableLeft="@drawable/library_icon"
         android:id="@+id/button3"
         android:layout_below="@+id/button2"
@@ -46,7 +47,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BUILD IT BIGGER"
+        android:text="@string/build_text"
         android:drawableLeft="@drawable/bigger_icon"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
@@ -56,7 +57,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="XYZ READER"
+        android:text="@string/reader_text"
         android:drawableLeft="@drawable/xyzreader_icon"
         android:id="@+id/button5"
         android:layout_below="@+id/button4"
@@ -66,16 +67,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CAPSTONE: MY OWN APP"
+        android:text="@string/capstone_text"
         android:drawableLeft="@drawable/capstone_icon"
         android:id="@+id/button6"
-        android:layout_marginTop="20dp"
         android:background="#EF9A9A"
         android:padding="20dp"
         android:textColor="#212121"
         android:textStyle="bold"
         android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true"
         android:onClick="showCapstoneApp"
         style="@style/Patagonia_Theme"/>
 </RelativeLayout>
