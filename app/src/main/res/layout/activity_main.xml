@@ -14,8 +14,6 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/spotify_text"
         android:drawableLeft="@drawable/spotify_icon"
         android:id="@+id/button"
@@ -24,8 +22,6 @@
         style="@style/Patagonia_Theme"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/scores_text"
         android:drawableLeft="@drawable/scores_icon"
         android:id="@+id/button2"
@@ -34,8 +30,6 @@
         style="@style/Patagonia_Theme"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/library_text"
         android:drawableLeft="@drawable/library_icon"
         android:id="@+id/button3"
@@ -45,8 +39,6 @@
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/build_text"
         android:drawableLeft="@drawable/bigger_icon"
         android:id="@+id/button4"
@@ -55,8 +47,6 @@
         style="@style/Patagonia_Theme"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/reader_text"
         android:drawableLeft="@drawable/xyzreader_icon"
         android:id="@+id/button5"
@@ -65,8 +55,6 @@
         style="@style/Patagonia_Theme"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/capstone_text"
         android:drawableLeft="@drawable/capstone_icon"
         android:id="@+id/button6"
