@@ -9,7 +9,7 @@
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:padding">10dp</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:background">#0288D1</item>
-        <item name="android:textColor">#E0F2F1</item>
+        <item name="android:background">@color/background_color</item>
+        <item name="android:textColor">@color/text_color</item>
     </style>
 </resources>
