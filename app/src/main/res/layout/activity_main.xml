@@ -1,86 +1,91 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="#A1887F">
-
-    <TextView android:text="@string/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="28sp"/>
-
-    <Button
-        android:text="@string/spotify_text"
-        android:drawableLeft="@drawable/spotify_icon"
-        android:id="@+id/button"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:onClick="showSpotifyStreamerApp"
-        android:layout_weight="1"
-        style="@style/Patagonia_Theme"/>
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#A1887F"
+        >
 
-    <Button
-        android:text="@string/scores_text"
-        android:drawableLeft="@drawable/scores_icon"
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
-        android:onClick="showScoresApp"
-        android:layout_weight="1"
-        style="@style/Patagonia_Theme"/>
+        <TextView android:text="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="28sp"
+            android:layout_weight="1"/>
 
-    <Button
-        android:text="@string/library_text"
-        android:drawableLeft="@drawable/library_icon"
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:onClick="showLibraryApp"
-        android:layout_weight="1"
-        style="@style/Patagonia_Theme"
-        />
+        <Button
+            android:text="@string/spotify_text"
+            android:drawableLeft="@drawable/spotify_icon"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showSpotifyStreamerApp"
+            android:layout_weight="0"
+            style="@style/Patagonia_Theme"/>
 
-    <Button
-        android:text="@string/build_text"
-        android:drawableLeft="@drawable/bigger_icon"
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
-        android:onClick="showBuildItBiggerApp"
-        android:layout_weight="1"
-        style="@style/Patagonia_Theme"/>
+        <Button
+            android:text="@string/scores_text"
+            android:drawableLeft="@drawable/scores_icon"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showScoresApp"
+            android:layout_weight="0"
+            style="@style/Patagonia_Theme"/>
 
-    <Button
-        android:text="@string/reader_text"
-        android:drawableLeft="@drawable/xyzreader_icon"
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button4"
-        android:onClick="showXYZReaderApp"
-        style="@style/Patagonia_Theme"/>
+        <Button
+            android:text="@string/library_text"
+            android:drawableLeft="@drawable/library_icon"
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showLibraryApp"
+            android:layout_weight="0"
+            style="@style/Patagonia_Theme"
+            />
 
-    <Button
-        android:text="@string/capstone_text"
-        android:drawableLeft="@drawable/capstone_icon"
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#EF9A9A"
-        android:textColor="#212121"
-        android:textStyle="bold"
-        android:layout_below="@+id/button5"
-        android:onClick="showCapstoneApp"
-        android:layout_weight="2"
-        style="@style/Patagonia_Theme"/>
-</RelativeLayout>
+        <Button
+            android:text="@string/build_text"
+            android:drawableLeft="@drawable/bigger_icon"
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showBuildItBiggerApp"
+            android:layout_weight="0"
+            style="@style/Patagonia_Theme"/>
+
+        <Button
+            android:text="@string/reader_text"
+            android:drawableLeft="@drawable/xyzreader_icon"
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showXYZReaderApp"
+            android:layout_weight="0"
+            style="@style/Patagonia_Theme"/>
+
+        <Button
+            android:text="@string/capstone_text"
+            android:drawableLeft="@drawable/capstone_icon"
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EF9A9A"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:onClick="showCapstoneApp"
+            android:layout_weight="1"
+            style="@style/Patagonia_Theme"/>
+    </LinearLayout>
+</ScrollView>
